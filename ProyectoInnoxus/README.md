@@ -1,2 +1,0 @@
-# ProyectoInnoxus
-Proyecto Innoxus

@@ -1,7 +1,0 @@
-{
-  "name": "Innoxus",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
