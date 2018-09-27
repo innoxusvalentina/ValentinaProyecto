@@ -1,12 +1,85 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      about
-      
+    <ion-title text-center>
+      Encuesta
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-slides>
+    <ion-slide>
+      <h1>Ingrese su codigo CUI ( Numero DPI )</h1>
+      <ion-list>
+        <ion-item>
+          <ion-label floating>CUI ( Numero DPI )</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+      </ion-list>
+      <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
+    </ion-slide>
 
+    <ion-slide>
+        <h1>Ingrese su nombre completo</h1>
+        <ion-list>
+            <ion-item>
+              <ion-label fixed>Nombre</ion-label>
+              <ion-input type="text" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label fixed>Apellido</ion-label>
+              <ion-input type="text" value=""></ion-input>
+            </ion-item>
+        </ion-list>
+        <button ion-button color="primary" (click)="anteriorSlide()" block>Anterior</button>
+        <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
+    </ion-slide>
+
+    <ion-slide>
+        <h1>Ingrese su numero de expediente</h1>
+        <ion-list>
+            <ion-item>
+              <ion-label fixed>Expediente</ion-label>
+              <ion-input type="text" value=""></ion-input>
+            </ion-item>
+        </ion-list>
+        <button ion-button color="primary" (click)="anteriorSlide()" block>Anterior</button>
+        <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
+    </ion-slide>
+
+    <ion-slide>
+      <h1>Reingrese su numero de expediente</h1>
+      <ion-list>
+          <ion-item>
+            <ion-label fixed>Expediente</ion-label>
+            <ion-input type="text" value=""></ion-input>
+          </ion-item>
+      </ion-list>
+      <button ion-button color="primary" (click)="anteriorSlide()" block>Anterior</button>
+      <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
+  </ion-slide>
+
+    <ion-slide>
+        <h1>Ingrese los datos solicitados</h1>
+        <ion-list>
+            <ion-item>
+              <ion-label fixed>Edad</ion-label>
+              <ion-input type="number" value=""></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label fixed>Telefono</ion-label>
+                <ion-input type="number" value=""></ion-input>
+              </ion-item>
+            <ion-item>
+                <ion-label>Genero</ion-label>
+                <ion-select [(ngModel)]="genero">
+                  <ion-option value="f">Femenino</ion-option>
+                  <ion-option value="m">Masculino</ion-option>
+                </ion-select>
+              </ion-item>
+        </ion-list>
+        <button ion-button color="primary"  (click)="anteriorSlide()" block>Anterior</button>
+        <button ion-button color="primary" (click)="irDoctores()" block>Siguiente</button>
+    </ion-slide>
+  </ion-slides>
 </ion-content>

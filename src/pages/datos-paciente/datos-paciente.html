@@ -15,7 +15,6 @@
 
 <ion-content padding>
   <ion-slides>
-
     <ion-slide>
       <h1>Ingrese su codigo CUI ( Numero DPI )</h1>
       <ion-list>
@@ -24,7 +23,6 @@
           <ion-input type="number"></ion-input>
         </ion-item>
       </ion-list>
-      <button ion-button color="primary" (click)="irValidacion()" block>Anterior</button>
       <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
     </ion-slide>
 
@@ -57,6 +55,18 @@
     </ion-slide>
 
     <ion-slide>
+      <h1>Reingrese su numero de expediente</h1>
+      <ion-list>
+          <ion-item>
+            <ion-label fixed>Expediente</ion-label>
+            <ion-input type="text" value=""></ion-input>
+          </ion-item>
+      </ion-list>
+      <button ion-button color="primary" (click)="anteriorSlide()" block>Anterior</button>
+      <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
+  </ion-slide>
+
+    <ion-slide>
         <h1>Ingrese los datos solicitados</h1>
         <ion-list>
             <ion-item>
@@ -69,7 +79,7 @@
               </ion-item>
             <ion-item>
                 <ion-label>Genero</ion-label>
-                <ion-select [(ngModel)]="Genero">
+                <ion-select [(ngModel)]="genero">
                   <ion-option value="f">Femenino</ion-option>
                   <ion-option value="m">Masculino</ion-option>
                 </ion-select>
@@ -78,6 +88,5 @@
         <button ion-button color="primary"  (click)="anteriorSlide()" block>Anterior</button>
         <button ion-button color="primary"  (click)="irEncuesta()" block>Siguiente</button>
     </ion-slide>
-
   </ion-slides>
 </ion-content>
