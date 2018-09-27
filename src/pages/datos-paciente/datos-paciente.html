@@ -17,13 +17,14 @@
   <ion-slides>
 
     <ion-slide>
-      <h1>Ingrese su numero de DPI ( Codigo CUI )</h1>
+      <h1>Ingrese su codigo CUI ( Numero DPI )</h1>
       <ion-list>
         <ion-item>
-          <ion-label floating>DPI ( Codigo CUI )</ion-label>
+          <ion-label floating>CUI ( Numero DPI )</ion-label>
           <ion-input type="number"></ion-input>
         </ion-item>
       </ion-list>
+      <button ion-button color="primary" (click)="irValidacion()" block>Anterior</button>
       <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
     </ion-slide>
 
@@ -39,8 +40,8 @@
               <ion-input type="text" value=""></ion-input>
             </ion-item>
         </ion-list>
-        <button ion-button color="primary" block>Anterior</button>
-        <button ion-button color="primary" block>Siguiente</button>
+        <button ion-button color="primary" (click)="anteriorSlide()" block>Anterior</button>
+        <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
     </ion-slide>
 
     <ion-slide>
@@ -51,8 +52,8 @@
               <ion-input type="text" value=""></ion-input>
             </ion-item>
         </ion-list>
-        <button ion-button color="primary" block>Anterior</button>
-        <button ion-button color="primary" block>Siguiente</button>
+        <button ion-button color="primary" (click)="anteriorSlide()" block>Anterior</button>
+        <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
     </ion-slide>
 
     <ion-slide>
@@ -67,15 +68,15 @@
                 <ion-input type="number" value=""></ion-input>
               </ion-item>
             <ion-item>
-                <ion-label>Gender</ion-label>
+                <ion-label>Genero</ion-label>
                 <ion-select [(ngModel)]="Genero">
                   <ion-option value="f">Femenino</ion-option>
                   <ion-option value="m">Masculino</ion-option>
                 </ion-select>
               </ion-item>
         </ion-list>
-        <button ion-button color="primary" block>Anterior</button>
-        <button ion-button color="primary" block>Siguiente</button>
+        <button ion-button color="primary"  (click)="anteriorSlide()" block>Anterior</button>
+        <button ion-button color="primary"  (click)="irEncuesta()" block>Siguiente</button>
     </ion-slide>
 
   </ion-slides>

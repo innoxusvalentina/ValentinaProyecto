@@ -1,5 +1,7 @@
 import { Component, ViewChild} from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { AboutPage } from '../about/about';
 
 /**
  * Generated class for the DatosPacientePage page.
@@ -15,7 +17,7 @@ import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 })
 export class DatosPacientePage {
 
-@ViewChild('slides') slides: Slides; 
+@ViewChild(Slides) slides: Slides; 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -26,6 +28,18 @@ export class DatosPacientePage {
 
   siguienteSlide(){
     this.slides.slideNext();
+  }
+  
+  anteriorSlide(){
+    this.slides.slidePrev();
+  }
+
+  irValidacion(){
+    this.navCtrl.push(HomePage);
+  }
+
+  irEncuesta(){
+    this.navCtrl.push(AboutPage);
   }
 
 }
