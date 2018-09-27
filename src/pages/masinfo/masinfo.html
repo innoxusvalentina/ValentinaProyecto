@@ -3,6 +3,9 @@
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
+
+
+  <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}"></ion-icon>
 -->
 <ion-header text-center>
 
@@ -14,12 +17,12 @@
 
 
 <ion-content padding>
-    <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}"></ion-icon>
-    <p><img src="{{ item.imagen }}" ></p>
-    <p>Especialidad: {{ item.description }}</p>
-    <p>Edad: {{ item.edad }}</p>
-    <p>Idiomas: {{ item.idioma }}</p>
-    <p>Años Laborando: {{ item.labor }}</p>
+    <div class="logo-doctor" justify-content-center><img src="{{ item.imagen }}"></div>
+    <h1>Información del Doctor</h1>
+          <p>Especialidad: {{ item.description }}</p>
+          <p>Idiomas: {{ item.idioma }}</p>
+          <p>Años Laborando: {{ item.labor }}</p>
+          <p>Edad: {{ item.edad }}</p>
     
 </ion-content>
 

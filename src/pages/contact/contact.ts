@@ -14,7 +14,7 @@ export class ContactPage {
       {
         'title': 'Dr.Edgar Cerón García',
         'icon': 'nodejs',
-        'description': 'Odontologo',
+        'description': 'Odontología',
         'color': '#78BD43',
         'edad': '35',
         'idioma': 'español, ingles',
@@ -25,7 +25,7 @@ export class ContactPage {
       {
         'title': 'Dra.Paola Y. Jacobo Oceguera',
         'icon': 'nodejs',
-        'description': 'Otorrinolaringologa',
+        'description': 'otorrinolaringología',
         'color': '#78BD43',
         'edad': '43',
         'idioma': 'español, ruso',
@@ -35,7 +35,7 @@ export class ContactPage {
       {
         'title': 'Dr. Marco Antonio Altamirano Cruz ',
         'icon': 'nodejs',
-        'description': 'Pediatra',
+        'description': 'Pediatría',
         'color': '#78BD43',
         'edad': '30',
         'idioma': 'español, ingles',
@@ -45,7 +45,7 @@ export class ContactPage {
       {
         'title': 'Dr. Rafael Moreno Sales',
         'icon': 'nodejs',
-        'description': 'Pediatra',
+        'description': 'Pediatría',
         'color': '#78BD43',
         'edad': '35',
         'idioma': 'español',
@@ -55,7 +55,7 @@ export class ContactPage {
       {
         'title': 'Dr. Rodrigo León Mar',
         'icon': 'nodejs',
-        'description': 'Oftanmologo',
+        'description': 'Oftalmología',
         'color': '#78BD43',
         'edad': '42',
         'imagen': '../assets/img/5.jpg',
@@ -75,7 +75,7 @@ export class ContactPage {
       {
         'title': 'Dra. Glenda Patricia García Soria',
         'icon': 'nodejs',
-        'description': 'Ginecologa',
+        'description': 'Ginecología',
         'color': '#78BD43',
         'edad': '38',
         'idioma': 'español, ingles, aleman',
@@ -85,7 +85,7 @@ export class ContactPage {
       {
         'title': 'Dr.Cristian Daniel Guzman',
         'icon': 'nodejs',
-        'description': 'Traumatologo',
+        'description': 'Traumatología',
         'color': '#78BD43',
         'edad': '37',
         'idioma': 'español, frances',
@@ -96,7 +96,7 @@ export class ContactPage {
       {
         'title': 'Dr. Marlon Orellana',
         'icon': 'nodejs',
-        'description': 'Dermatologo',
+        'description': 'Dermatología',
         'color': '#78BD43',
         'edad': '39',
         'imagen': '../assets/img/9.jpg',
