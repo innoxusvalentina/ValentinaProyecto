@@ -16,63 +16,92 @@ export class ContactPage {
         'icon': 'nodejs',
         'description': 'Odontologo',
         'color': '#78BD43',
-        'edad': '35'
+        'edad': '35',
+        'idioma': 'español, ingles',
+        'labor': '7 años',
+        'imagen': '../assets/img/1.jpg',
+        
       },
       {
         'title': 'Dra.Paola Y. Jacobo Oceguera',
         'icon': 'nodejs',
-        'description': 'The latest version of cascading stylesheets - the styling language of the web!',
+        'description': 'Otorrinolaringologa',
         'color': '#78BD43',
-        'edad': '35'
+        'edad': '43',
+        'idioma': 'español, ruso',
+        'labor': '13 años',
+        'imagen': '../assets/img/4.jpg',
       },
       {
         'title': 'Dr. Marco Antonio Altamirano Cruz ',
         'icon': 'nodejs',
-        'description': 'The latest version of the web\'s markup language.',
+        'description': 'Pediatra',
         'color': '#78BD43',
-        'edad': '35'
+        'edad': '30',
+        'idioma': 'español, ingles',
+        'labor': '2 años',
+        'imagen': '../assets/img/2.jpg',
       },
       {
         'title': 'Dr. Rafael Moreno Sales',
         'icon': 'nodejs',
-        'description': 'One of the most popular programming languages on the Web!',
+        'description': 'Pediatra',
         'color': '#78BD43',
-        'edad': '35'
+        'edad': '35',
+        'idioma': 'español',
+        'labor': '3 años',
+        'imagen': '../assets/img/3.jpg'
       },
       {
         'title': 'Dr. Rodrigo León Mar',
         'icon': 'nodejs',
-        'description': 'Syntactically Awesome Stylesheets - a mature, stable, and powerful professional grade CSS extension.',
+        'description': 'Oftanmologo',
         'color': '#78BD43',
-        'edad': '35'
+        'edad': '42',
+        'imagen': '../assets/img/5.jpg',
+        'idioma': 'español, ingles, frances',
+        'labor': '13 años'
       },
       {
         'title': 'Dr.Luis Alejandro Castellanos ',
         'icon': 'nodejs',
-        'description': 'An open-source, cross-platform runtime environment for developing server-side Web applications.',
+        'description': 'Terapeuta',
         'color': '#78BD43',
-        'edad': '35'
+        'edad': '46',
+        'imagen': '../assets/img/6.jpg',
+        'idioma': 'español, ingles, aleman, frances',
+        'labor': '17 años'
       },
       {
         'title': 'Dra. Glenda Patricia García Soria',
         'icon': 'nodejs',
-        'description': 'A clear and powerful object-oriented programming language!',
+        'description': 'Ginecologa',
         'color': '#78BD43',
-        'edad': '35'
+        'edad': '38',
+        'idioma': 'español, ingles, aleman',
+        'labor': '7 años',
+        'imagen': '../assets/img/7.jpg'
       },
       {
         'title': 'Dr.Cristian Daniel Guzman',
         'icon': 'nodejs',
-        'description': 'A super simple way to add formatting like headers, bold, bulleted lists, and so on to plain text.',
+        'description': 'Traumatologo',
         'color': '#78BD43',
-        'edad': '35'
+        'edad': '37',
+        'idioma': 'español, frances',
+        'labor': '3 años',
+        'imagen': '../assets/img/8.jpg'
+
       },
       {
         'title': 'Dr. Marlon Orellana',
         'icon': 'nodejs',
-        'description': 'The official mascot of the Linux kernel!',
+        'description': 'Dermatologo',
         'color': '#78BD43',
-        'edad': '35'
+        'edad': '39',
+        'imagen': '../assets/img/9.jpg',
+        'idioma': 'español, ingles, ruso',
+        'labor': '7 años'
       },
     ]
 
