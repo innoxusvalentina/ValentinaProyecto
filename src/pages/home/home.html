@@ -14,19 +14,15 @@
       Ingrese su DPI para poder validar, si sus datos ya están guardados en nuestro registros.
     </p>
   </h6>
-  <div class="input-validacion">
-      <ion-list>
-          <ion-item >
-            <ion-label floating>Username</ion-label>
-            <ion-input type="text"></ion-input>
-          </ion-item>
-        
-          <ion-item>
-            <ion-label floating>Password</ion-label>
-            <ion-input type="password"></ion-input>
-          </ion-item>
-        
-        </ion-list>
-  </div>
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>DPI ( Codigo CUI )</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+    
+    </ion-list>
+
+    <button ion-button color="primary" (click)="ingresarDatosPaciente()" block>Validar</button>
   
 </ion-content>
