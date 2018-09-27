@@ -8,78 +8,112 @@
 
 <ion-content padding>
   <ion-slides>
+
+      <ion-slide>
+          <h1>Seleccione su edad</h1>
+          <ion-list>
+              
+              <ion-item>
+                  <ion-label>Seleccione una Opción</ion-label>
+                  <ion-select [(ngModel)]="edad">
+                    <ion-option value="a">15-20 años</ion-option>
+                    <ion-option value="b">21-25 años</ion-option>
+                    <ion-option value="c">26-30 años</ion-option>
+                    <ion-option value="d">31-35 años</ion-option>
+                    <ion-option value="e">36-40 años</ion-option>
+                    <ion-option value="f">41-45 años</ion-option>
+                    <ion-option value="g">46-50 años</ion-option>
+                    <ion-option value="h">51-55 años</ion-option>
+                    <ion-option value="i">56-60 años</ion-option>
+                    <ion-option value="j">61-65 años</ion-option>
+                    <ion-option value="k">66-70 años</ion-option> 
+                    <ion-option value="l">70 años o más</ion-option>            
+                  </ion-select>
+                </ion-item>
+          </ion-list>
+          <button ion-button color="primary"  (click)="anteriorSlide()" block>Anterior</button>
+          <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
+        </ion-slide>
+
+
     <ion-slide>
-      <h1>Ingrese su codigo CUI ( Numero DPI )</h1>
+      <h1>¿A que área vienes?</h1>
       <ion-list>
-        <ion-item>
-          <ion-label floating>CUI ( Numero DPI )</ion-label>
-          <ion-input type="number"></ion-input>
-        </ion-item>
-      </ion-list>
-      <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
-    </ion-slide>
-
-    <ion-slide>
-        <h1>Ingrese su nombre completo</h1>
-        <ion-list>
-            <ion-item>
-              <ion-label fixed>Nombre</ion-label>
-              <ion-input type="text" value=""></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-label fixed>Apellido</ion-label>
-              <ion-input type="text" value=""></ion-input>
-            </ion-item>
-        </ion-list>
-        <button ion-button color="primary" (click)="anteriorSlide()" block>Anterior</button>
-        <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
-    </ion-slide>
-
-    <ion-slide>
-        <h1>Ingrese su numero de expediente</h1>
-        <ion-list>
-            <ion-item>
-              <ion-label fixed>Expediente</ion-label>
-              <ion-input type="text" value=""></ion-input>
-            </ion-item>
-        </ion-list>
-        <button ion-button color="primary" (click)="anteriorSlide()" block>Anterior</button>
-        <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
-    </ion-slide>
-
-    <ion-slide>
-      <h1>Reingrese su numero de expediente</h1>
-      <ion-list>
+          
           <ion-item>
-            <ion-label fixed>Expediente</ion-label>
-            <ion-input type="text" value=""></ion-input>
-          </ion-item>
+              <ion-label>Área</ion-label>
+              <ion-select [(ngModel)]="area">
+                <ion-option value="p">Pediatría</ion-option>
+                <ion-option value="o">Odontología</ion-option>
+                <ion-option value="m">Medicina General</ion-option>
+                <ion-option value="c">Clínica de los Ojos</ion-option>
+                <ion-option value="n">Nutrición</ion-option>
+                <ion-option value="ca">Cardiología</ion-option>
+              </ion-select>
+            </ion-item>
       </ion-list>
-      <button ion-button color="primary" (click)="anteriorSlide()" block>Anterior</button>
+      <button ion-button color="primary"  (click)="anteriorSlide()" block>Anterior</button>
       <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
   </ion-slide>
 
-    <ion-slide>
-        <h1>Ingrese los datos solicitados</h1>
-        <ion-list>
-            <ion-item>
-              <ion-label fixed>Edad</ion-label>
-              <ion-input type="number" value=""></ion-input>
-            </ion-item>
-            <ion-item>
-                <ion-label fixed>Telefono</ion-label>
-                <ion-input type="number" value=""></ion-input>
-              </ion-item>
-            <ion-item>
-                <ion-label>Genero</ion-label>
-                <ion-select [(ngModel)]="genero">
-                  <ion-option value="f">Femenino</ion-option>
-                  <ion-option value="m">Masculino</ion-option>
-                </ion-select>
-              </ion-item>
-        </ion-list>
-        <button ion-button color="primary"  (click)="anteriorSlide()" block>Anterior</button>
-        <button ion-button color="primary" (click)="irDoctores()" block>Siguiente</button>
-    </ion-slide>
+  <ion-slide>
+    <h1>¿Como se entero del evento?</h1>
+    <ion-list>
+        
+        <ion-item>
+            <ion-label>Seleccione una Opción</ion-label>
+            <ion-select [(ngModel)]="medio">
+              <ion-option value="f">Facebook</ion-option>
+              <ion-option value="o">Otra Persona</ion-option>
+              <ion-option value="p">Prensa</ion-option>
+              <ion-option value="r">Radío </ion-option>
+              <ion-option value="t">Televisión</ion-option>             
+            </ion-select>
+          </ion-item>
+    </ion-list>
+    <button ion-button color="primary"  (click)="anteriorSlide()" block>Anterior</button>
+    <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
+</ion-slide>  
+
+
+
+<ion-slide>
+  <h1>¿Que valoras de nuestros servicios?</h1>
+  <ion-list>
+      
+      <ion-item>
+          <ion-label>Seleccione una Opción</ion-label>
+          <ion-select [(ngModel)]="servicio">
+            <ion-option value="f">El trato de su personal</ion-option>
+            <ion-option value="o">Encuentro lo que necesito</ion-option>
+            <ion-option value="p">La ubicación</ion-option>
+            <ion-option value="r">Precios accesibles</ion-option>
+                         
+          </ion-select>
+        </ion-item>
+  </ion-list>
+  <button ion-button color="primary"  (click)="anteriorSlide()" block>Anterior</button>
+  <button ion-button color="primary" (click)="siguienteSlide()" block>Siguiente</button>
+</ion-slide>
+
+<ion-slide>
+  <h1>¿Nos Recomendarias?</h1>
+  <ion-list>
+      
+      <ion-item>
+          <ion-label>Seleccione una Opción</ion-label>
+          <ion-select [(ngModel)]="recomendacion">
+            <ion-option value="f">Si</ion-option>
+            <ion-option value="o">No</ion-option>
+                        
+          </ion-select>
+        </ion-item>
+  </ion-list>
+  <button ion-button color="primary"  (click)="anteriorSlide()" block>Anterior</button>
+  <button ion-button color="primary" (click)="irDoctores()" block>Siguiente</button>
+</ion-slide>
+
+
+
   </ion-slides>
 </ion-content>
